@@ -10,5 +10,15 @@ package t3lpfinal;
  * @author Mauricio
  */
 public class Lavarax extends Fuego {
+    int vida;
     
+    public int getVida(){
+    
+        return vida;
+    }
+    
+    public void setVida(int v){
+    
+        this.vida = v;
+    }
 }

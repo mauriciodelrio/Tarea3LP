@@ -9,6 +9,9 @@ package t3lpfinal;
  *
  * @author Mauricio
  */
+
+import java.util.*;
+import java.io.*;
 public class T3lpfinal {
 
     /**
@@ -16,6 +19,9 @@ public class T3lpfinal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        List <Plagiamon> listaP = new ArrayList <> ();
+        
+        
     }
     
 }

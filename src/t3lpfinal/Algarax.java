@@ -10,5 +10,16 @@ package t3lpfinal;
  * @author Mauricio
  */
 public class Algarax extends Agua {
+    int vida;
+    
+    public int getVida(){
+    
+        return vida;
+    }
+    
+    public void setVida(int v){
+    
+        this.vida = v;
+    }
     
 }
