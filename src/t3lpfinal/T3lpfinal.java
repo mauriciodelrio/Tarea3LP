@@ -20,7 +20,8 @@ public class T3lpfinal {
     public static void main(String[] args) {
         // TODO code application logic here
         List <Plagiamon> listaP = new ArrayList <> ();
-        
+        int contador=0;
+                
         
     }
     
