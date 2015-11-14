@@ -40,7 +40,9 @@ public class t3lpfinal {
         System.out.println("la vida del plag de ash es: : "+ash.getPlagiamon().getVida());
         System.out.println("la vida de cacti es: "+gay.getPlagiamon().getVida());
         ventana_principal menuholi= new ventana_principal();
-        menuholi.setVisible(true);  
+        menuholi.setVisible(true);
+        int variableinutil=0;
+        //holi
     }
     
     
