@@ -5,35 +5,31 @@
  */
 package t3lpfinal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Mauricio
  */
 public class Jugador implements Entrenador {
     protected String nombre;
-    protected Plagiamon plg1;
-    protected Plagiamon plg2;
-    protected Plagiamon plg3;
+    protected ArrayList <Plagiamon> ListaP= new ArrayList <>();
     public Jugador(String name){
         nombre=name;
-        plg1=null;
-        plg2=null;
-        plg3=null;
     }
-    public boolean set_plagiamon(Plagiamon plag1, Plagiamon plag2, Plagiamon plag3){
-        plg1=plag1;
-        plg2=plag2;
-        plg3=plag3;
-        return !(plg1==null||plg2==null||plg3==null);
+    public void addPlagiamon(Plagiamon plg){
+        ListaP.add(plg);
     }
+
     public Plagiamon getPlagiamon(){
-        if (plg1.getVida()>0){
-            return plg1;
+        if (ListaP.get(0).getVida()>0){
+            return ListaP.get(0);
         }
-        else if (plg2.getVida()>0 && plg1.getVida()==0){
-            return plg2;
+        else if (ListaP.get(1).getVida()>0 && ListaP.get(0).getVida()==0){
+            return ListaP.get(1);
         }
-        else return plg3;
+        else return ListaP.get(2);
     }
     public void batalla(Plagiamon plag1, Plagiamon plag2, int atq1, int atq2){      
         int Tipo1 = 0;
@@ -46,6 +42,9 @@ public class Jugador implements Entrenador {
         if (atq1==2)plag1.ataque_secundario(plag2,Tipo2);
         if (atq2==1)plag2.ataque_principal(plag1,Tipo1);
         if (atq2==2)plag2.ataque_secundario(plag1,Tipo1);
+    }
+    public int getVidaLastPlg(){
+        return ListaP.get(2).getVida();
     }
     
 }

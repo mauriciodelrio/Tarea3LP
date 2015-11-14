@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package t3lpfinal;
 
 /**
@@ -22,8 +27,8 @@ public class Lavarax extends Fuego {
     }
     
     public void setVida(int v){
-    
-        this.vida = v;
+        if(v<0) this.vida=0;
+        else this.vida = v;
     }
     public int getTipo1(){
         return tipo1;
