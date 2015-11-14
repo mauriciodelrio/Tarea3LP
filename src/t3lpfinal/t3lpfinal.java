@@ -32,8 +32,7 @@ public class t3lpfinal {
         
         Jugador ash = new Jugador("felipe");
         Enemigo gay = new Enemigo("mauricio");
-        ash.set_plagiamon(algui, fogi, cali);
-        gay.set_plagiamon(cacti, lavi, vapi);
+
         System.out.println("la vida del plag de ash es: "+ash.getPlagiamon().getVida());
         System.out.println("la vida de cacti weas: "+gay.getPlagiamon().getVida());
         ash.batalla(ash.getPlagiamon(), gay.getPlagiamon(), 1, 1);
