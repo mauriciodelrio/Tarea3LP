@@ -5,6 +5,8 @@
  */
 package t3lpfinal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Mauricio
@@ -42,6 +44,11 @@ public class elegir_plagiamon extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Comenzar!");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         jCheckBox1.setText("Vaporito");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +161,54 @@ public class elegir_plagiamon extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        int contador_box=0;
+        if(jCheckBox1.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox2.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox3.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox4.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox5.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox6.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        
+        if(contador_box>3 || contador_box<3){
+        
+            JOptionPane.showMessageDialog(null,"DEBES SELECCIONAR TRES PLAGIAMONES");
+            jCheckBox1.setSelected(false);
+            jCheckBox2.setSelected(false);
+            jCheckBox3.setSelected(false);
+            jCheckBox4.setSelected(false);
+            jCheckBox5.setSelected(false);
+            jCheckBox6.setSelected(false);
+        }
+        
+        if(contador_box==3){
+        
+            //sigue el codigo
+            String cadena;
+            cadena = jTextField1.getText();
+            JOptionPane.showMessageDialog(null,"tu nombre es: " + cadena);
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
