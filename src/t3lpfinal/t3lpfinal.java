@@ -28,11 +28,10 @@ public class t3lpfinal {
         
 
         // TODO code application logic here
+        //ventana_principal menuholi= new ventana_principal();
+        //menuholi.setVisible(true);
         
-      
-        ventana_principal menuholi= new ventana_principal();
-        menuholi.setVisible(true);
+
     }
-    
     
 }
