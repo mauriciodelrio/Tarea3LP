@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import java.util.Random;
 
 /**
  *
@@ -228,6 +229,117 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             String cadena;
             cadena = jTextField1.getText();
             JOptionPane.showMessageDialog(null,"tu nombre es: " + cadena);
+            Random  rnd = new Random();
+            int entero1=Math.abs(rnd.nextInt()%9);
+            int entero2=Math.abs(rnd.nextInt()%9);
+            int entero3=Math.abs(rnd.nextInt()%9);
+            JOptionPane.showMessageDialog(null,"numero es: " + entero1);
+            JOptionPane.showMessageDialog(null,"numero es: " + entero2);
+            JOptionPane.showMessageDialog(null,"numero es: " + entero3);
+            
+            String [] nombres={"cartman", "kyle", "stan", "kenny", "mcKay", "ms Garrison", "timmy", "tweak", "Chef"};
+            String nombre1=nombres[entero1];
+            String nombre2= nombres[entero2];
+            String nombre3= nombres[entero3];
+            
+            JOptionPane.showMessageDialog(null,"enemigo 1 es: " + nombre1);
+            JOptionPane.showMessageDialog(null,"enemigo 2 es: " + nombre2);
+            JOptionPane.showMessageDialog(null,"enemigo 3 es: " + nombre3);
+            
+            int enteroP;
+            for (int i=0;i<2;i++){
+                
+               enteroP =Math.abs(rnd.nextInt()%6)+1;
+               if(enteroP==1){
+                   //crear Vaporito
+                   //vaporito nuevo = new vaporito();
+                   //pasar plagiamon a enemigo1
+               
+               }
+               if(enteroP==2){
+                   //crear Algarax
+               
+               }
+               if(enteroP==3){
+                   //Crear Lavarax
+               
+               }
+               if(enteroP==4){
+                   //Crear Cactaria
+               
+               }
+               if(enteroP==5){
+                   //Crear Calabalantern
+               
+               }
+               if(enteroP==6){
+                   //Crear Fogatin
+               
+               }
+               
+            }
+            
+            for (int i=0;i<2;i++){
+                
+               enteroP =Math.abs(rnd.nextInt()%6)+1;
+               if(enteroP==1){
+                   //crear Vaporito
+                   //vaporito nuevo = new vaporito();
+                   //pasar plagiamon a enemigo2
+               
+               }
+               if(enteroP==2){
+                   //crear Algarax
+               
+               }
+               if(enteroP==3){
+                   //Crear Lavarax
+               
+               }
+               if(enteroP==4){
+                   //Crear Cactaria
+               
+               }
+               if(enteroP==5){
+                   //Crear Calabalantern
+               
+               }
+               if(enteroP==6){
+                   //Crear Fogatin
+               
+               }
+            }
+            
+            for (int i=0;i<2;i++){
+                
+               enteroP =Math.abs(rnd.nextInt()%6)+1;
+               if(enteroP==1){
+                   //crear Vaporito
+                   //vaporito nuevo = new vaporito();
+                   //pasar plagiamon a enemigo3
+               
+               }
+               if(enteroP==2){
+                   //crear Algarax
+               
+               }
+               if(enteroP==3){
+                   //Crear Lavarax
+               
+               }
+               if(enteroP==4){
+                   //Crear Cactaria
+               
+               }
+               if(enteroP==5){
+                   //Crear Calabalantern
+               
+               }
+               if(enteroP==6){
+                   //Crear Fogatin
+               
+               }
+            }            
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
