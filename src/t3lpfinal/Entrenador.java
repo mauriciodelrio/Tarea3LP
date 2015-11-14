@@ -10,5 +10,5 @@ package t3lpfinal;
  * @author Mauricio
  */
 public interface Entrenador {
-    
+        public Plagiamon getPlagiamon();
 }

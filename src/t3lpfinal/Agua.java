@@ -10,5 +10,5 @@ package t3lpfinal;
  * @author Mauricio
  */
 public abstract class Agua implements Plagiamon {
-    
+
 }
