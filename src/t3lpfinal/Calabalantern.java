@@ -24,8 +24,8 @@ public class Calabalantern extends Planta {
     }
     
     public void setVida(int v){
-    
-        this.vida = v;
+        if(v<0) this.vida=0;
+        else this.vida = v;
     }
     public int getTipo1(){
         return tipo1;
