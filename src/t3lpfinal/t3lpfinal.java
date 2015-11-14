@@ -41,6 +41,12 @@ public class t3lpfinal {
         ventana_principal menuholi= new ventana_principal();
         menuholi.setVisible(true);
         int variableinutil=0;
+        
+        
+        
+        
+        
+        int variableinutil3=0;
         //holi
     }
     
