@@ -21,6 +21,7 @@ public class Enemigo implements Entrenador {
     public void addPlagiamon(Plagiamon plag){
         ListaP.add(plag);
     }
+    @Override
     public Plagiamon getPlagiamon(){
         if (ListaP.get(0).getVida()>0){
             return ListaP.get(0);
@@ -29,5 +30,14 @@ public class Enemigo implements Entrenador {
             return ListaP.get(1);
         }
 
+    }
+    @Override
+    public int vidaPlagiamonfinal(){
+        return ListaP.get(1).getVida();
+    }  
+
+    @Override
+    public void batalla(Plagiamon plagiamon, Plagiamon plagiamon0, int i, int random) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

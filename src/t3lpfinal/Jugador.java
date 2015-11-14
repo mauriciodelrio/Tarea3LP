@@ -6,7 +6,7 @@
 package t3lpfinal;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  *
@@ -22,6 +22,7 @@ public class Jugador implements Entrenador {
         ListaP.add(plg);
     }
 
+    @Override
     public Plagiamon getPlagiamon(){
         if (ListaP.get(0).getVida()>0){
             return ListaP.get(0);
@@ -46,5 +47,7 @@ public class Jugador implements Entrenador {
     public int getVidaLastPlg(){
         return ListaP.get(2).getVida();
     }
-    
+    public int vidaPlagiamonfinal(){
+        return ListaP.get(2).getVida();
+    }  
 }

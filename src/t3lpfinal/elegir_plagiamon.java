@@ -5,6 +5,7 @@
  */
 package t3lpfinal;
 
+import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
@@ -21,6 +22,13 @@ public class elegir_plagiamon extends javax.swing.JFrame {
     /**
      * Creates new form elegir_plagiamon
      */
+    ArrayList <Entrenador> listafinal=new ArrayList <>();
+    
+    public ArrayList <Entrenador> getListaFinal(){
+    
+        return listafinal;
+    }
+    
     public elegir_plagiamon() {
         initComponents();
         setLocationRelativeTo(null);
@@ -190,6 +198,7 @@ public class elegir_plagiamon extends javax.swing.JFrame {
         if(jCheckBox1.isSelected()==true){
         
             contador_box+=1;
+            
         }
         if(jCheckBox2.isSelected()==true){
         
@@ -230,6 +239,39 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             cadena = jTextField1.getText();
             JOptionPane.showMessageDialog(null,"tu nombre es: " + cadena);
             Random  rnd = new Random();
+            Jugador yo= new Jugador(cadena);
+            if(jCheckBox1.isSelected()==true){
+
+                //Crear vaporito
+                Vaporito vapi= new Vaporito(18);
+                yo.addPlagiamon(vapi);
+            }
+            if(jCheckBox2.isSelected()==true){
+                Lavarax lavi= new Lavarax(18);
+                yo.addPlagiamon(lavi);
+                //Crear lavarax
+            }
+            if(jCheckBox3.isSelected()==true){
+                Calabalantern cali= new Calabalantern(18);
+                yo.addPlagiamon(cali);
+                //Calabalantern
+            }
+            if(jCheckBox4.isSelected()==true){
+                Fogatin fogi= new Fogatin(18);
+                yo.addPlagiamon(fogi);
+                //Fogatin
+            }
+            if(jCheckBox5.isSelected()==true){
+                Algarax algi= new Algarax(18);
+                yo.addPlagiamon(algi);
+                //Algarax
+            }
+            if(jCheckBox6.isSelected()==true){
+                Cactaria cacti= new Cactaria(18);
+                yo.addPlagiamon(cacti);
+                //Cactaria
+            }
+            JOptionPane.showMessageDialog(null,"plag1 es: " + yo.getPlagiamon().getNombre());
             int entero1=Math.abs(rnd.nextInt()%9);
             int entero2=Math.abs(rnd.nextInt()%9);
             int entero3=Math.abs(rnd.nextInt()%9);
@@ -245,36 +287,43 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"enemigo 1 es: " + nombre1);
             JOptionPane.showMessageDialog(null,"enemigo 2 es: " + nombre2);
             JOptionPane.showMessageDialog(null,"enemigo 3 es: " + nombre3);
-            
+            Enemigo enem1= new Enemigo(nombre1);
+            Enemigo enem2= new Enemigo(nombre2);
+            Enemigo enem3= new Enemigo(nombre3);
             int enteroP;
             for (int i=0;i<2;i++){
                 
                enteroP =Math.abs(rnd.nextInt()%6)+1;
                if(enteroP==1){
                    //crear Vaporito
-                   //vaporito nuevo = new vaporito();
-                   //pasar plagiamon a enemigo1
-               
+                   Vaporito nuevov = new Vaporito(9);
+                   enem1.addPlagiamon(nuevov);  
                }
                if(enteroP==2){
                    //crear Algarax
+                    Algarax nuevoa = new Algarax(9);
+                    enem1.addPlagiamon(nuevoa);
                
                }
                if(enteroP==3){
                    //Crear Lavarax
-               
+                    Lavarax nuevol = new Lavarax(9);
+                    enem1.addPlagiamon(nuevol);               
                }
                if(enteroP==4){
                    //Crear Cactaria
-               
+                    Cactaria nuevoc = new Cactaria(9);
+                    enem1.addPlagiamon(nuevoc);               
                }
                if(enteroP==5){
                    //Crear Calabalantern
-               
+                    Calabalantern nuevoca = new Calabalantern(9);
+                    enem1.addPlagiamon(nuevoca);               
                }
                if(enteroP==6){
                    //Crear Fogatin
-               
+                    Fogatin nuevof = new Fogatin(9);
+                    enem1.addPlagiamon(nuevof);        
                }
                
             }
@@ -284,29 +333,34 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                enteroP =Math.abs(rnd.nextInt()%6)+1;
                if(enteroP==1){
                    //crear Vaporito
-                   //vaporito nuevo = new vaporito();
-                   //pasar plagiamon a enemigo2
-               
+                   Vaporito nuevov = new Vaporito(9);
+                   enem2.addPlagiamon(nuevov);  
                }
                if(enteroP==2){
                    //crear Algarax
+                    Algarax nuevoa = new Algarax(9);
+                    enem2.addPlagiamon(nuevoa);
                
                }
                if(enteroP==3){
                    //Crear Lavarax
-               
+                    Lavarax nuevol = new Lavarax(9);
+                    enem2.addPlagiamon(nuevol);               
                }
                if(enteroP==4){
                    //Crear Cactaria
-               
+                    Cactaria nuevoc = new Cactaria(9);
+                    enem2.addPlagiamon(nuevoc);               
                }
                if(enteroP==5){
                    //Crear Calabalantern
-               
+                    Calabalantern nuevoca = new Calabalantern(9);
+                    enem2.addPlagiamon(nuevoca);               
                }
                if(enteroP==6){
                    //Crear Fogatin
-               
+                    Fogatin nuevof = new Fogatin(9);
+                    enem2.addPlagiamon(nuevof);        
                }
             }
             
@@ -315,31 +369,46 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                enteroP =Math.abs(rnd.nextInt()%6)+1;
                if(enteroP==1){
                    //crear Vaporito
-                   //vaporito nuevo = new vaporito();
-                   //pasar plagiamon a enemigo3
-               
+                   Vaporito nuevov = new Vaporito(9);
+                   enem3.addPlagiamon(nuevov);  
                }
                if(enteroP==2){
                    //crear Algarax
+                    Algarax nuevoa = new Algarax(9);
+                    enem3.addPlagiamon(nuevoa);
                
                }
                if(enteroP==3){
                    //Crear Lavarax
-               
+                    Lavarax nuevol = new Lavarax(9);
+                    enem3.addPlagiamon(nuevol);               
                }
                if(enteroP==4){
                    //Crear Cactaria
-               
+                    Cactaria nuevoc = new Cactaria(9);
+                    enem3.addPlagiamon(nuevoc);               
                }
                if(enteroP==5){
                    //Crear Calabalantern
-               
+                    Calabalantern nuevoca = new Calabalantern(9);
+                    enem3.addPlagiamon(nuevoca);               
                }
                if(enteroP==6){
                    //Crear Fogatin
-               
+                    Fogatin nuevof = new Fogatin(9);
+                    enem3.addPlagiamon(nuevof);        
                }
-            }            
+            }
+            JOptionPane.showMessageDialog(null,"enemigo 1 plag: " + enem1.getPlagiamon().getNombre());
+            JOptionPane.showMessageDialog(null,"enemigo 2 es: " + enem2.getPlagiamon().getNombre());
+            JOptionPane.showMessageDialog(null,"enemigo 3 es: " + enem3.getPlagiamon().getNombre());
+            listafinal.add(yo);
+            listafinal.add(enem1);
+            listafinal.add(enem2);
+            listafinal.add(enem3);
+        batalla ventana_batalla= new batalla(listafinal);
+        ventana_batalla.setVisible(true);
+        this.setVisible(false);
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -376,8 +445,9 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                 new elegir_plagiamon().setVisible(true);
             }
         });
+        
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -30,25 +30,10 @@ public class t3lpfinal {
         System.out.println("la vida de cacti es: "+cacti.getVida());
         // TODO code application logic here
 
-        Jugador ash = new Jugador("felipe");
-        Enemigo gay = new Enemigo("mauricio");
-
-        System.out.println("la vida del plag de ash es: "+ash.getPlagiamon().getVida());
-        System.out.println("la vida de cacti weas: "+gay.getPlagiamon().getVida());
-        ash.batalla(ash.getPlagiamon(), gay.getPlagiamon(), 1, 1);
-        System.out.println("la vida del plag de ash es: : "+ash.getPlagiamon().getVida());
-        System.out.println("la vida de cacti es: "+gay.getPlagiamon().getVida());
         ventana_principal menuholi= new ventana_principal();
         menuholi.setVisible(true);
-        int variableinutil=0;
-        
-        
-        
-        
-        
-        int variableinutil3=0;
-        //holi
-    }
-    
+        //System.out.println("la vida de algui es: "+yo.getPlagiamon().getNombre());
+        //System.out.println("la vida de cacti es: "+enem1.getPlagiamon().getVida());
+    }    
     
 }
