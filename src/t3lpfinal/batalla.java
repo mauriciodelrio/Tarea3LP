@@ -37,7 +37,25 @@ public class batalla extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -47,15 +65,116 @@ public class batalla extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Algazor.png"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cactarea.png"))); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Calabalantern.png"))); // NOI18N
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fogatin.png"))); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Lavarax.png"))); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vaporito.png"))); // NOI18N
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Calabalantern.png"))); // NOI18N
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fogatin.png"))); // NOI18N
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Lavarax.png"))); // NOI18N
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vaporito.png"))); // NOI18N
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Algazor.png"))); // NOI18N
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cactarea.png"))); // NOI18N
+
+        jLabel20.setText("ACTIVO: ");
+
+        jLabel21.setText("ACTIVO: ");
+
+        jLabel22.setText("HP:");
+
+        jLabel23.setText("HP:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(129, 129, 129)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel22)))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 431, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(2, 2, 2)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel2)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1)))
+                    .addComponent(jLabel4))
+                .addGap(41, 41, 41)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(8, 8, 8))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel21)
+                                    .addComponent(jLabel23))
+                                .addGap(64, 64, 64)
+                                .addComponent(jLabel17))
+                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addContainerGap())))
         );
 
         pack();
@@ -117,6 +236,22 @@ public class batalla extends javax.swing.JFrame {
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         // TODO add your handling code here:
+                    
+        jLabel14.setVisible(false);
+        jLabel15.setVisible(false);
+        jLabel16.setVisible(false);
+        jLabel17.setVisible(false);
+        jLabel18.setVisible(false);
+        jLabel19.setVisible(false);
+        
+        
+        jLabel1.setVisible(false);
+        jLabel2.setVisible(false);
+        jLabel3.setVisible(false);
+        jLabel4.setVisible(false);
+        jLabel5.setVisible(false);
+        jLabel6.setVisible(false);
+        
         if(listap.get(0).vidaPlagiamonfinal()==0){
             //Lanzar una wea de perdiste
             System.exit(0);
@@ -124,19 +259,156 @@ public class batalla extends javax.swing.JFrame {
         if(evt.VK_1==evt.getKeyCode()){
             Random  rnd = new Random();
             int random=(rnd.nextInt()%2)+1;
+            
+            
             //ataque principal
             String plagluchador=listap.get(0).getPlagiamon().getNombre();
+            jLabel21.setText("Activo: " + listap.get(0).getPlagiamon().getNombre());
+            
+            if(plagluchador.equals("Vaporito")){
+                jLabel17.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Lavarax")){
+                jLabel16.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Algazor")){
+                jLabel18.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Cactaria")){
+                jLabel19.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Calabalantern")){
+                jLabel14.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Fogatin")){
+                jLabel15.setVisible(true);
+                
+            }
+            
+            
             if(listap.get(1).vidaPlagiamonfinal()>0){
+                String plagenemigo=listap.get(1).getPlagiamon().getNombre();
+                jLabel20.setText("Activo: " + listap.get(1).getPlagiamon().getNombre());
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(1).getPlagiamon(),1,random);
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()>0){
+                
+                String plagenemigo=listap.get(2).getPlagiamon().getNombre();
+                jLabel20.setText("Activo: " + listap.get(2).getPlagiamon().getNombre());
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(2).getPlagiamon(),1,random);
             }            
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()>0){
+                String plagenemigo=listap.get(3).getPlagiamon().getNombre();
+                jLabel20.setText("Activo: " + listap.get(3).getPlagiamon().getNombre());
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(3).getPlagiamon(),1,random);
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()==0){
                 //ganaste aquí;
+                JOptionPane.showMessageDialog(null,"felicidades ganaste");
                 System.exit(0);
             }
         }
@@ -145,23 +417,154 @@ public class batalla extends javax.swing.JFrame {
             int random=(rnd.nextInt()%2)+1;
             //ataque principal
             String plagluchador=listap.get(0).getPlagiamon().getNombre();
+            jLabel21.setText("Activo: " + listap.get(0).getPlagiamon().getNombre());
+            
+            if(plagluchador.equals("Vaporito")){
+                jLabel17.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Lavarax")){
+                jLabel16.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Algazor")){
+                jLabel18.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Cactaria")){
+                jLabel19.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Calabalantern")){
+                jLabel14.setVisible(true);
+                
+            }
+            
+            if(plagluchador.equals("Fogatin")){
+                jLabel15.setVisible(true);
+                
+            }
+            
             if(listap.get(1).vidaPlagiamonfinal()>0){
+                jLabel20.setText("Activo: " + listap.get(1).getPlagiamon().getNombre());
+                String plagenemigo=listap.get(1).getPlagiamon().getNombre();
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(1).getPlagiamon(),2,random);
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()>0){
+                jLabel20.setText("Activo: " + listap.get(2).getPlagiamon().getNombre());
+                String plagenemigo=listap.get(2).getPlagiamon().getNombre();
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(2).getPlagiamon(),2,random);
             }            
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()>0){
+                String plagenemigo=listap.get(3).getPlagiamon().getNombre();
+                jLabel20.setText("Activo: " + listap.get(3).getPlagiamon().getNombre());
+                if(plagenemigo.equals("Vaporito")){
+                jLabel6.setVisible(true);
+                
+                }
+
+                if(plagenemigo.equals("Lavarax")){
+                    jLabel5.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Algazor")){
+                    jLabel1.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Cactaria")){
+                    jLabel2.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Calabalantern")){
+                    jLabel3.setVisible(true);
+
+                }
+
+                if(plagenemigo.equals("Fogatin")){
+                    jLabel4.setVisible(true);
+
+                }
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(3).getPlagiamon(),2,random);
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()==0){
                 //ganaste aquí;
+                JOptionPane.showMessageDialog(null,"felicidades ganaste");
                 System.exit(0);
             }
         }
         if(evt.VK_ESCAPE==evt.getKeyCode()){
         
-            //ataque principal
             System.exit(0);
         }
         
@@ -198,5 +601,21 @@ public class batalla extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

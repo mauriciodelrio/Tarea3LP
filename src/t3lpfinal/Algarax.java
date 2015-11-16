@@ -10,7 +10,7 @@ package t3lpfinal;
  * @author Mauricio
  */
 public class Algarax extends Agua {
-    protected String nombre="Algarax";
+    protected String nombre="Algazor";
     protected int vida;
     protected int tipo1=1;
     protected int tipo2=3;
