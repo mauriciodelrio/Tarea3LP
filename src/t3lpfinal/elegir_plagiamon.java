@@ -442,7 +442,6 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             //sigue el codigo
             String cadena;
             cadena = jTextField1.getText();
-            JOptionPane.showMessageDialog(null,"tu nombre es: " + cadena);
             Random  rnd = new Random();
             Jugador yo= new Jugador(cadena);
             if(jCheckBox1.isSelected()==true){
@@ -542,22 +541,17 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                 yo.addPlagiamon(cacti);
                 //Cactaria
             }
-            JOptionPane.showMessageDialog(null,"plag1 es: " + yo.getPlagiamon().getNombre());
+
             int entero1=Math.abs(rnd.nextInt()%9);
             int entero2=Math.abs(rnd.nextInt()%9);
             int entero3=Math.abs(rnd.nextInt()%9);
-            JOptionPane.showMessageDialog(null,"numero es: " + entero1);
-            JOptionPane.showMessageDialog(null,"numero es: " + entero2);
-            JOptionPane.showMessageDialog(null,"numero es: " + entero3);
-            
+
             String [] nombres={"cartman", "kyle", "stan", "kenny", "mcKay", "ms Garrison", "timmy", "tweak", "Chef"};
             String nombre1=nombres[entero1];
             String nombre2= nombres[entero2];
             String nombre3= nombres[entero3];
             
-            JOptionPane.showMessageDialog(null,"enemigo 1 es: " + nombre1);
-            JOptionPane.showMessageDialog(null,"enemigo 2 es: " + nombre2);
-            JOptionPane.showMessageDialog(null,"enemigo 3 es: " + nombre3);
+
             Enemigo enem1= new Enemigo(nombre1);
             Enemigo enem2= new Enemigo(nombre2);
             Enemigo enem3= new Enemigo(nombre3);
