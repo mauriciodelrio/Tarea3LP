@@ -10,5 +10,6 @@ package t3lpfinal;
  * @author Mauricio
  */
 public abstract class Planta implements Plagiamon {
-    
+    abstract public void ataque_principal(Plagiamon enem, int Tipo);
+    abstract public void ataque_secundario(Plagiamon enem, int Tipo);
 }
