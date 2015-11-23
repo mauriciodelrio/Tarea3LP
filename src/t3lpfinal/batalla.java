@@ -5,9 +5,11 @@
  */
 package t3lpfinal;
 
+import java.awt.LayoutManager;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JOptionPane;
+import javax.swing.OverlayLayout;
 
 /**
  *
@@ -43,16 +45,16 @@ public class batalla extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -77,15 +79,11 @@ public class batalla extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vaporito.png"))); // NOI18N
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Calabalantern.png"))); // NOI18N
-
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fogatin.png"))); // NOI18N
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Lavarax.png"))); // NOI18N
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vaporito.png"))); // NOI18N
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Algazor.png"))); // NOI18N
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cactarea.png"))); // NOI18N
 
@@ -97,28 +95,24 @@ public class batalla extends javax.swing.JFrame {
 
         jLabel23.setText("HP:");
 
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Algazor.png"))); // NOI18N
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Calabalantern.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel17)
-                    .addComponent(jLabel21))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel14)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -132,9 +126,20 @@ public class batalla extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel20)
                         .addGap(129, 129, 129)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel22)))))
+                        .addComponent(jLabel22))
+                    .addComponent(jLabel21)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(174, 174, 174)
+                        .addComponent(jLabel23))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel19)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel16)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,29 +157,32 @@ public class batalla extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel1)))
                     .addComponent(jLabel4))
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel22))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(8, 8, 8))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 139, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel21)
                                     .addComponent(jLabel23))
-                                .addGap(64, 64, 64)
-                                .addComponent(jLabel17))
-                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGap(25, 25, 25))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel20)
+                                    .addComponent(jLabel22))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel15)
                             .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addContainerGap())))
+                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel14))))
+                .addContainerGap())
         );
 
         pack();
@@ -236,7 +244,7 @@ public class batalla extends javax.swing.JFrame {
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         // TODO add your handling code here:
-                    
+        
         jLabel14.setVisible(false);
         jLabel15.setVisible(false);
         jLabel16.setVisible(false);
@@ -254,11 +262,15 @@ public class batalla extends javax.swing.JFrame {
         
         if(listap.get(0).vidaPlagiamonfinal()==0){
             //Lanzar una wea de perdiste
+            JOptionPane.showMessageDialog(null,"perdiste, eres muy muy penca");
             System.exit(0);
         }
         if(evt.VK_1==evt.getKeyCode()){
             Random  rnd = new Random();
             int random=(rnd.nextInt()%2)+1;
+            if(random==0)random=1;
+            JOptionPane.showMessageDialog(null,"numero random: "+random);
+            
             
             
             //ataque principal
@@ -332,6 +344,9 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(1).getPlagiamon(),1,random);
+                
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()>0){
                 
@@ -369,6 +384,8 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(2).getPlagiamon(),1,random);
+                jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
             }            
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()>0){
                 String plagenemigo=listap.get(3).getPlagiamon().getNombre();
@@ -405,6 +422,8 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(3).getPlagiamon(),1,random);
+                //jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                //jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()==0){
                 //ganaste aquí;
@@ -415,6 +434,8 @@ public class batalla extends javax.swing.JFrame {
         if(evt.VK_2==evt.getKeyCode()){
             Random  rnd = new Random();
             int random=(rnd.nextInt()%2)+1;
+            if(random==0)random=1;
+            JOptionPane.showMessageDialog(null,"numero random: "+random);
             //ataque principal
             String plagluchador=listap.get(0).getPlagiamon().getNombre();
             jLabel21.setText("Activo: " + listap.get(0).getPlagiamon().getNombre());
@@ -484,6 +505,8 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(1).getPlagiamon(),2,random);
+                //jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                //jLabel22.setText("HP: "+listap.get(1).getPlagiamon().getVida());
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()>0){
                 jLabel20.setText("Activo: " + listap.get(2).getPlagiamon().getNombre());
@@ -520,6 +543,8 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(2).getPlagiamon(),2,random);
+                //jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                //jLabel22.setText("HP: "+listap.get(2).getPlagiamon().getVida());
             }            
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()>0){
                 String plagenemigo=listap.get(3).getPlagiamon().getNombre();
@@ -556,6 +581,8 @@ public class batalla extends javax.swing.JFrame {
                 jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
                 jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
                 listap.get(0).batalla(listap.get(0).getPlagiamon(),listap.get(3).getPlagiamon(),2,random);
+                //jLabel23.setText("HP: "+listap.get(0).getPlagiamon().getVida());
+                //jLabel22.setText("HP: "+listap.get(3).getPlagiamon().getVida());
             }
             if(listap.get(1).vidaPlagiamonfinal()==0 && listap.get(2).vidaPlagiamonfinal()==0 && listap.get(3).vidaPlagiamonfinal()==0){
                 //ganaste aquí;

@@ -27,8 +27,8 @@ public class Lavarax extends Fuego {
     }
     
     public void setVida(int v){
-        if(v<0) this.vida=0;
-        else this.vida = v;
+        if(v<0) vida=0;
+        else vida = v;
     }
     public int getTipo1(){
         return tipo1;

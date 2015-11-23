@@ -19,21 +19,16 @@ public class t3lpfinal {
      */
  
     public static void main(String[] args) {
-        Algarax algui=new Algarax(18);
-        Cactaria cacti=new Cactaria(9);
-        Calabalantern cali=new Calabalantern(18);
-        Fogatin fogi=new Fogatin(18);
-        Lavarax lavi=new Lavarax(9);
-        Vaporito vapi=new Vaporito(9);
-        
-        System.out.println("la vida de algui es: "+algui.getVida());
-        System.out.println("la vida de cacti es: "+cacti.getVida());
+
         // TODO code application logic here
 
         ventana_principal menuholi= new ventana_principal();
         menuholi.setVisible(true);
         //System.out.println("la vida de algui es: "+yo.getPlagiamon().getNombre());
         //System.out.println("la vida de cacti es: "+enem1.getPlagiamon().getVida());
-    }    
+
+        
+        
+        }    
     
 }
