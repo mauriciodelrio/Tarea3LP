@@ -17,9 +17,21 @@ public interface Plagiamon {
     public int getTipo1();
 
     public int getTipo2();
-
+/******** Metodo: ataque_principal ********************
+Descripcion: Realiza el ataque principal del plagiamon
+Parametros:
+plag2 Plagiamon enemigo
+Tipo2 Tipo del plagiamon enemigo
+Retorno: 
+************************************************/
     public void ataque_principal(Plagiamon plag2, int Tipo2);
-
+/******** Metodo: ataque_secundario ********************
+Descripcion: Realiza el ataque secundario del plagiamon
+Parametros:
+plag2 Plagiamon enemigo
+Tipo2 Tipo del plagiamon enemigo
+Retorno: 
+************************************************/
     public void ataque_secundario(Plagiamon plag2, int Tipo2);
     public String getNombre();
 

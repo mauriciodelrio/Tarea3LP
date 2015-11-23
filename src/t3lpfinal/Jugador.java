@@ -18,6 +18,7 @@ public class Jugador implements Entrenador {
     public Jugador(String name){
         nombre=name;
     }
+
     public void addPlagiamon(Plagiamon plg){
         ListaP.add(plg);
     }
@@ -32,6 +33,8 @@ public class Jugador implements Entrenador {
         }
         else return ListaP.get(2);
     }
+
+
     public void batalla(Plagiamon plag1, Plagiamon plag2, int atq1, int atq2){      
         int Tipo1 = 0;
         int Tipo2 = 0;

@@ -5,6 +5,8 @@
  */
 package t3lpfinal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Mauricio
@@ -38,12 +40,15 @@ public class Cactaria extends Planta {
         int Vida=enem.getVida();
         if (Tipo==3){
             enem.setVida(Vida-4);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 4 de daño.");
         }
         else if (Tipo==1){
             enem.setVida(Vida-6);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 6 de daño.");
         }
         else{
             enem.setVida(Vida-2);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 2 de daño.");
         }
     }
     
@@ -52,12 +57,15 @@ public class Cactaria extends Planta {
         int Vida=enem.getVida();
         if (Tipo==1){
             enem.setVida(Vida-4);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 4 de daño.");
         }
         else if (Tipo==2){
             enem.setVida(Vida-5);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 5 de daño.");
         }
         else{
             enem.setVida(Vida-3);
+            JOptionPane.showMessageDialog(null,nombre+" hizo 3 de daño.");
         }
     }
     
