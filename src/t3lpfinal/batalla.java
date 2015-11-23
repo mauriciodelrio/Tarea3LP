@@ -269,7 +269,7 @@ public class batalla extends javax.swing.JFrame {
             Random  rnd = new Random();
             int random=(rnd.nextInt()%2)+1;
             if(random==0)random=1;
-            JOptionPane.showMessageDialog(null,"numero random: "+random);
+
             
             
             
@@ -435,7 +435,6 @@ public class batalla extends javax.swing.JFrame {
             Random  rnd = new Random();
             int random=(rnd.nextInt()%2)+1;
             if(random==0)random=1;
-            JOptionPane.showMessageDialog(null,"numero random: "+random);
             //ataque principal
             String plagluchador=listap.get(0).getPlagiamon().getNombre();
             jLabel21.setText("Activo: " + listap.get(0).getPlagiamon().getNombre());

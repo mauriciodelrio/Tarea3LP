@@ -664,9 +664,7 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                     enem3.addPlagiamon(nuevof);        
                }
             }
-            JOptionPane.showMessageDialog(null,"enemigo 1 plag: " + enem1.getPlagiamon().getNombre());
-            JOptionPane.showMessageDialog(null,"enemigo 2 es: " + enem2.getPlagiamon().getNombre());
-            JOptionPane.showMessageDialog(null,"enemigo 3 es: " + enem3.getPlagiamon().getNombre());
+
             listafinal.add(yo);
             listafinal.add(enem1);
             listafinal.add(enem2);
