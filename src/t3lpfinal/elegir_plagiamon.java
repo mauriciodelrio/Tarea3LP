@@ -63,6 +63,21 @@ public class elegir_plagiamon extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox8 = new javax.swing.JCheckBox();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox16 = new javax.swing.JCheckBox();
+        jCheckBox17 = new javax.swing.JCheckBox();
+        jCheckBox18 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,6 +90,7 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             }
         });
 
+        jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox1.setText("Vaporito");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,14 +98,19 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             }
         });
 
+        jCheckBox2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox2.setText("Lavarax");
 
+        jCheckBox3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox3.setText("Calabalantern");
 
+        jCheckBox4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox4.setText("Fogatin");
 
+        jCheckBox5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox5.setText("Algarax");
 
+        jCheckBox6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jCheckBox6.setText("Cactaria");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -114,66 +135,186 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             }
         });
 
+        jCheckBox7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox7.setText("Vaporito");
+        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox7ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox8.setText("Lavarax");
+
+        jCheckBox9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox9.setText("Calabalantern");
+
+        jCheckBox10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox10.setText("Fogatin");
+
+        jCheckBox11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox11.setText("Algarax");
+
+        jCheckBox12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox12.setText("Cactaria");
+
+        jCheckBox13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox13.setText("Vaporito");
+        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox13ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox14.setText("Lavarax");
+
+        jCheckBox15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox15.setText("Calabalantern");
+
+        jCheckBox16.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox16.setText("Fogatin");
+
+        jCheckBox17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox17.setText("Algarax");
+
+        jCheckBox18.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jCheckBox18.setText("Cactaria");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel3.setText("Elija Plagiamon 1");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel4.setText("Elija Plagiamon 2");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel5.setText("Elija Plagiamon 3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField1)
-                            .addComponent(jLabel1))
-                        .addGap(49, 49, 49))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox2)
-                            .addComponent(jCheckBox1)
-                            .addComponent(jCheckBox3))
+                            .addComponent(jCheckBox14)
+                            .addComponent(jCheckBox13)
+                            .addComponent(jCheckBox15))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox4)
-                            .addComponent(jCheckBox5)
-                            .addComponent(jCheckBox6))
-                        .addGap(152, 152, 152))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(71, 71, 71))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(181, 181, 181))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox16)
+                                    .addComponent(jCheckBox17)
+                                    .addComponent(jCheckBox18))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox2)
+                                    .addComponent(jCheckBox1)
+                                    .addComponent(jCheckBox3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox4)
+                                    .addComponent(jCheckBox5)
+                                    .addComponent(jCheckBox6))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(36, 36, 36)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox8)
+                                    .addComponent(jCheckBox7)
+                                    .addComponent(jCheckBox9))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox10)
+                                    .addComponent(jCheckBox11)
+                                    .addComponent(jCheckBox12)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(jLabel5)
+                                .addGap(44, 44, 44))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(99, 99, 99)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jTextField1)
+                            .addComponent(jLabel1))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
+                .addGap(76, 76, 76)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jCheckBox1)
+                        .addComponent(jCheckBox7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox9))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jCheckBox10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox12))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jCheckBox13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox15))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jCheckBox16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
                         .addComponent(jCheckBox2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox3))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jCheckBox4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jCheckBox4)
+                            .addComponent(jCheckBox1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -221,6 +362,58 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             contador_box+=1;
         }
         
+        if(jCheckBox7.isSelected()==true){
+        
+            contador_box+=1;
+            
+        }
+        if(jCheckBox8.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox9.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox10.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox11.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox12.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        
+        if(jCheckBox13.isSelected()==true){
+        
+            contador_box+=1;
+            
+        }
+        if(jCheckBox14.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox15.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox16.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox17.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        if(jCheckBox18.isSelected()==true){
+        
+            contador_box+=1;
+        }
+        
         if(contador_box>3 || contador_box<3){
         
             JOptionPane.showMessageDialog(null,"DEBES SELECCIONAR TRES PLAGIAMONES");
@@ -230,6 +423,18 @@ public class elegir_plagiamon extends javax.swing.JFrame {
             jCheckBox4.setSelected(false);
             jCheckBox5.setSelected(false);
             jCheckBox6.setSelected(false);
+            jCheckBox7.setSelected(false);
+            jCheckBox8.setSelected(false);
+            jCheckBox9.setSelected(false);
+            jCheckBox10.setSelected(false);
+            jCheckBox11.setSelected(false);
+            jCheckBox12.setSelected(false);
+            jCheckBox13.setSelected(false);
+            jCheckBox14.setSelected(false);
+            jCheckBox15.setSelected(false);
+            jCheckBox16.setSelected(false);
+            jCheckBox17.setSelected(false);
+            jCheckBox18.setSelected(false);
         }
         
         if(contador_box==3){
@@ -267,6 +472,72 @@ public class elegir_plagiamon extends javax.swing.JFrame {
                 //Algarax
             }
             if(jCheckBox6.isSelected()==true){
+                Cactaria cacti= new Cactaria(18);
+                yo.addPlagiamon(cacti);
+                //Cactaria
+            }
+            
+            
+            if(jCheckBox7.isSelected()==true){
+
+                //Crear vaporito
+                Vaporito vapi= new Vaporito(18);
+                yo.addPlagiamon(vapi);
+            }
+            if(jCheckBox8.isSelected()==true){
+                Lavarax lavi= new Lavarax(18);
+                yo.addPlagiamon(lavi);
+                //Crear lavarax
+            }
+            if(jCheckBox9.isSelected()==true){
+                Calabalantern cali= new Calabalantern(18);
+                yo.addPlagiamon(cali);
+                //Calabalantern
+            }
+            if(jCheckBox10.isSelected()==true){
+                Fogatin fogi= new Fogatin(18);
+                yo.addPlagiamon(fogi);
+                //Fogatin
+            }
+            if(jCheckBox11.isSelected()==true){
+                Algarax algi= new Algarax(18);
+                yo.addPlagiamon(algi);
+                //Algarax
+            }
+            if(jCheckBox12.isSelected()==true){
+                Cactaria cacti= new Cactaria(18);
+                yo.addPlagiamon(cacti);
+                //Cactaria
+            }
+            
+            
+            if(jCheckBox13.isSelected()==true){
+
+                //Crear vaporito
+                Vaporito vapi= new Vaporito(18);
+                yo.addPlagiamon(vapi);
+            }
+            if(jCheckBox14.isSelected()==true){
+                Lavarax lavi= new Lavarax(18);
+                yo.addPlagiamon(lavi);
+                //Crear lavarax
+            }
+            if(jCheckBox15.isSelected()==true){
+                Calabalantern cali= new Calabalantern(18);
+                yo.addPlagiamon(cali);
+                //Calabalantern
+            }
+            if(jCheckBox16.isSelected()==true){
+                Fogatin fogi= new Fogatin(18);
+                yo.addPlagiamon(fogi);
+                //Fogatin
+            }
+            if(jCheckBox17.isSelected()==true){
+                Algarax algi= new Algarax(18);
+                yo.addPlagiamon(algi);
+                //Algarax
+            }
+            if(jCheckBox18.isSelected()==true){
                 Cactaria cacti= new Cactaria(18);
                 yo.addPlagiamon(cacti);
                 //Cactaria
@@ -412,6 +683,14 @@ public class elegir_plagiamon extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox13ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -452,13 +731,28 @@ public class elegir_plagiamon extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox jCheckBox15;
+    private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JCheckBox jCheckBox17;
+    private javax.swing.JCheckBox jCheckBox18;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
